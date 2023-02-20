@@ -31,6 +31,7 @@ export default [
         babelHelpers: "bundled",
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".es6", ".es", ".mjs"],
       }),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
